@@ -35,7 +35,7 @@ class KNN_Algorithm():
         The two dataframes are then merged together and the final dataframe is returned.
         """
 
-        csv_path = 'dataset/survey_dataset.csv'
+        csv_path = '../dataset/survey_dataset.csv'
         df = pd.read_csv(csv_path, names=self.cols,
                          usecols=self.num_cols, header=0)
         df1 = pd.read_csv(csv_path, names=self.cols,
