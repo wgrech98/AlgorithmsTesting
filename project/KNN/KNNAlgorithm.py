@@ -125,6 +125,8 @@ class KNN_Algorithm():
 
             neigh.fit(X_train, y_train)
             y_predict = neigh.predict(X_test)
+            result = pd.DataFrame(y_predict, y_test)
+            result.to_csv(r"results/results_{}.csv".format(test_index))
 
             # Accuracy score for each fold
             acc = accuracy_score(y_test, y_predict)
