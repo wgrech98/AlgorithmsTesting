@@ -6,7 +6,7 @@ import pickle
 from sklearn.model_selection import KFold
 
 
-class CN2algorithm():
+class CN2_Algorithm():
 
     def __init__(self):
         """
