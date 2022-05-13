@@ -50,7 +50,7 @@ class KNN_Algorithm():
 
         return self.dataset
 
-    def convert_to_vectors(self, df):
+    def convert_to_integers(self, df):
         """ 
         Convert characteristics to vectors to enable machine learning processing.
 
@@ -107,7 +107,7 @@ class KNN_Algorithm():
         of each fold. The average accuracy achieved by all the fold
         """
         # Converts string data to discrete variables
-        conv = self.convert_to_vectors(self.dataset)
+        conv = self.convert_to_integers(self.dataset)
 
         # Set X and Y
         X = conv.drop('methodology', axis=1)

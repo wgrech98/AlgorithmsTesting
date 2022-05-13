@@ -58,7 +58,7 @@ class D3_Algorithm():
 
         return self.dataset
 
-    def convert_to_vectors(self, df):
+    def convert_to_integers(self, df):
         """ 
         Convert characteristics to vectors to enable machine learning processing.
 
@@ -117,7 +117,7 @@ class D3_Algorithm():
         dataset = self.dataset
 
         # convert characteristics to vectors
-        cl_dataset = self.convert_to_vectors(dataset)
+        cl_dataset = self.convert_to_integers(dataset)
 
         # Set X and Y variables
         X = cl_dataset.drop('methodology', axis=1)
