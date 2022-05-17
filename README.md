@@ -38,7 +38,8 @@ In KNN, the trained data is compared with test data and distances are calculated
 
 1. Download the entire repository
 2. Unzip all files
-3. python3 KNNalgorithm.py
+3. cd KNN
+4. python3 KNNalgorithm.py
 
 # Decision Tree Algorithm
 
@@ -46,5 +47,5 @@ Decision Trees (DTs) are another important rule-based technique represented port
 
 1. Download the entire repository
 2. Unzip all files
-3. cd DecsionTree
-4. python3 decisionTreeAlgorithm.py
+3. cd DecisionTree
+4. python3 DecisionTreeAlgorithm.py
