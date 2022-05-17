@@ -215,7 +215,7 @@ class CN2_Algorithm():
                 rule_specificity = class_tally.values[0]/sum(class_tally)
                 rule_dictionary = {'rule': row, 'predicted_class': majority_class,
                                    'entropy': rule_entropy, 'laplace_accuracy': laplace_accuracy_of_rule,
-                                   'significance_of_rules': rule_significance, 'length': length_of_rule,
+                                   'signifcance_of_rules': rule_significance, 'length': length_of_rule,
                                    'num_records_covered': num_examples_covered, 'specificity': rule_specificity}
                 list_of_rule_dicts.append(rule_dictionary)
 
@@ -271,7 +271,7 @@ class CN2_Algorithm():
         """
         Function which expects a complex (a list of tuples) as input and 
         performs the CN2 specialisation process to specialise the complexes 
-        in the "star". In the process, it adds ddtional conjunctions using 
+        in the "star". In the process, it adds addtional conjunctions using 
         all the possible selectors. 
 
         Returns a list of new, specialised complexes.
@@ -419,5 +419,5 @@ class CN2_Algorithm():
 
 
 if __name__ == '__main__':
-    CN2_class = CN2algorithm()
+    CN2_class = CN2_Algorithm()
     CN2_class.main()
