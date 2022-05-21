@@ -12,7 +12,7 @@ The dataset is composed of the characteristics related to the choice of a SDLC m
 
 ## Models
 
-The repository hosts three python algorithms, namely the KNN algorithm, the decision tree algorithm, and the CN2 algorithm.
+The repository hosts three python algorithms (Python version used: 3.10.1), namely the KNN algorithm, the decision tree algorithm, and the CN2 algorithm.
 
 # CN2 Algorithm
 
