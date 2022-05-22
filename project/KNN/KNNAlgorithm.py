@@ -121,7 +121,7 @@ class KNN_Algorithm():
         for train_index, test_index in kf.split(X):
             X_train, X_test = X.iloc[train_index, :], X.iloc[test_index, :]
             y_train, y_test = y.iloc[train_index], y.iloc[test_index]
-            neigh = KNeighborsClassifier(n_neighbors=3)
+            neigh = KNeighborsClassifier(n_neighbors=1)
 
             neigh.fit(X_train, y_train)
             y_predict = neigh.predict(X_test)
