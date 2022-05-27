@@ -29,7 +29,7 @@ The algorithm generates a rule list according to the approach followed by for th
 
 1. Download the entire repository
 2. Unzip all files
-3. cd CN2
+3. cd \Project\CN2
 4. pip install -r requirements.txt
 5. python3 CN2Algorithm.py
 
@@ -39,7 +39,7 @@ In KNN, the trained data is compared with test data and distances are calculated
 
 1. Download the entire repository
 2. Unzip all files
-3. cd KNN
+3. cd \Project\KNN
 4. pip install -r requirements.txt
 5. python3 KNNalgorithm.py
 
@@ -49,6 +49,6 @@ Decision Trees (DTs) are another important rule-based technique represented port
 
 1. Download the entire repository
 2. Unzip all files
-3. cd DecisionTree
+3. cd \Project\DecisionTree
 4. pip install -r requirements.txt
 5. python3 DecisionTreeAlgorithm.py
