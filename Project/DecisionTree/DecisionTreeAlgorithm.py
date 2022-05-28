@@ -127,7 +127,7 @@ class D3_Algorithm():
         # for-loop to build a decision tree model with Kfold cross-validation
         kf = KFold(n_splits=k, random_state=None)
         acc_score = []
-        numbers = range(0, 2)
+        numbers = range(1, 3)
 
         for train_index, test_index in kf.split(X):
             X_train, X_test = X.iloc[train_index, :], X.iloc[test_index, :]
@@ -149,8 +149,8 @@ class D3_Algorithm():
             # Getting prediction
             y_predict = self.model.predict(X_test)
             result = pd.DataFrame(y_predict, y_test)
-            result.to_csv(r"results/results_{}.csv".format(test_index))
-
+            for num in numbers:
+                result.to_csv(r"results/results_{}.csv".format(num))
             # print accuracy score for each fold
             acc = accuracy_score(y_test, y_predict)
             acc_score.append(acc)

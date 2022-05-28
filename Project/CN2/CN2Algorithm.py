@@ -69,7 +69,7 @@ class CN2_Algorithm():
         k = 3
         kf = KFold(n_splits=k, random_state=None)
         df = self.dataset
-        numbers = range(0, 2)
+        numbers = range(1, 3)
 
         for train_index, test_index in kf.split(df):
             self.train, self.test = df.iloc[train_index,
@@ -79,7 +79,8 @@ class CN2_Algorithm():
             result = pd.DataFrame(predict)
             # rule = pd.DataFrame(rule_list)
             # rule.to_csv(r"rules_{}.csv".format())
-            result.to_csv(r"results/results_{}.csv".format(test_index))
+            for num in numbers:
+                result.to_csv(r"results/results_{}.csv".format(num))
 
         print(predict)
 

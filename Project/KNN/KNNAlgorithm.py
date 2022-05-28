@@ -113,6 +113,7 @@ class KNN_Algorithm():
         X = conv.drop('methodology', axis=1)
         y = conv[['methodology']]
 
+        numbers = range(1, 3)
         k = 3
         kf = KFold(n_splits=k, random_state=None)
         acc_score = []
@@ -126,8 +127,8 @@ class KNN_Algorithm():
             neigh.fit(X_train, y_train)
             y_predict = neigh.predict(X_test)
             result = pd.DataFrame(y_predict, y_test)
-            result.to_csv(r"results/results_{}.csv".format(test_index))
-
+            for num in numbers:
+                result.to_csv(r"results/results_{}.csv".format(num))
             # Accuracy score for each fold
             acc = accuracy_score(y_test, y_predict)
             acc_score.append(acc)
