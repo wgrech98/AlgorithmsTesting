@@ -59,7 +59,7 @@ class CN2_Algorithm():
                           usecols=self.num_cols1, header=0)
         df = df.dropna()
         df1 = df1.dropna()
-        self.dataset = df.append(df1, ignore_index=True)
+        self.dataset = pd.concat((df, df1), ignore_index=True)
 
     def perform_CN2(self):
         """ 
@@ -216,7 +216,7 @@ class CN2_Algorithm():
                 rule_specificity = class_tally.values[0]/sum(class_tally)
                 rule_dictionary = {'rule': row, 'predicted_class': majority_class,
                                    'entropy': rule_entropy, 'laplace_accuracy': laplace_accuracy_of_rule,
-                                   'signifcance_of_rules': rule_significance, 'length': length_of_rule,
+                                   'significance_of_rules': rule_significance, 'length': length_of_rule,
                                    'num_records_covered': num_examples_covered, 'specificity': rule_specificity}
                 list_of_rule_dicts.append(rule_dictionary)
 

@@ -54,7 +54,7 @@ class D3_Algorithm():
         df1 = df1.dropna()
 
         # Merging the two datasets
-        self.dataset = df.append(df1, ignore_index=True)
+        self.dataset = pd.concat((df, df1), ignore_index=True)
 
         return self.dataset
 
