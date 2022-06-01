@@ -12,7 +12,7 @@ The dataset is composed of the characteristics related to the choice of a SDLC m
 
 ## Models
 
-The repository hosts three python algorithms (Python version used: 3.10.1), namely the KNN algorithm, the decision tree algorithm, and the CN2 algorithm.
+The repository hosts three Python algorithms (Python version used: 3.10.1), namely the KNN algorithm, the decision tree algorithm, and the CN2 algorithm.
 
 # CN2 Algorithm
 
@@ -25,7 +25,7 @@ A rule list produced with the CN2 algorithm follows the following notation:
     ...
     else Default_Class.
 
-The algorithm generates a rule list according to the approach followed by for the dataset described above. Then, the cross validation exercise is utilised to test the algorithm's accuracy and correctness in predicting a SDLC methodology. The results are returned to the user in CSV format. To run the algorithm:
+The algorithm generates a rule list according to the approach followed by for the dataset described above. Then, the cross-validation exercise is utilised to test the algorithm's accuracy and correctness in predicting a SDLC methodology. The results are returned to the user in CSV format. To run the algorithm:
 
 1. Download the entire repository
 2. Unzip all files
@@ -35,17 +35,17 @@ The algorithm generates a rule list according to the approach followed by for th
 
 # KNN Algorithm
 
-In KNN, the trained data is compared with test data and distances are calculated using Euclidean distance. It then classifies an instance by finding its nearest neighbours and recommend the top n nearest neighbour SDLC Methodologies. The algorithm runs the ‘KNeighborsClassifier'() with the cross-validation technique. The predictions are returned with the accuracy achieved for each fold. To run the algorithm:
+In KNN, the distances between the training set and testing instances are calculated with the use of the Euclidean distance. It then classifies an instance by finding its nearest neighbours and recommend the top n nearest neighbour SDLC Methodologies. The algorithm runs the ‘KNeighborsClassifier()' with the cross-validation technique. The predictions are returned with the accuracy achieved for each fold. To run the algorithm:
 
 1. Download the entire repository
 2. Unzip all files
 3. pip install -r requirements.txt
 4. cd .\Project\KNN\
-5. python KNNalgorithm.py
+5. python KNNAlgorithm.py
 
 # Decision Tree Algorithm
 
-Decision Trees (DTs) are another important rule-based technique represented portrayed as a tree structure. The algorithm splits the dataset into smaller classes according to the most important predictor in the predictor space with an if-then rule set. When running the decision tree algorithm, The algorithm runs the ‘DecisionTreeClassifier()’ with the cross-validation technique. The predictions are returned with the accuracy achieved for each fold. A decision tree graph is also returned to the user. To run the algorithm:
+Decision Trees (DTs) are another important rule-based technique portrayed as a tree structure. The algorithm splits the dataset into smaller classes according to the most important predictor in the predictor space with an if-then rule set. When running the decision tree algorithm, the algorithm runs the ‘DecisionTreeClassifier()’ with the cross-validation technique. The predictions are returned with the accuracy achieved for each fold. A decision tree graph is also returned to the user. To run the algorithm:
 
 1. Download the entire repository
 2. Unzip all files
